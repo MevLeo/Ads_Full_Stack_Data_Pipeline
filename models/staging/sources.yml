@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: bronze
+    database: bronze
+    schema: raw
+    tables:
+      - name: google_ads_raw
+      - name: youtube_ads_raw
+      - name: bing_ads_raw

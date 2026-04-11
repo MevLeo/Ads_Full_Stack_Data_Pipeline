@@ -1,0 +1,86 @@
+version: 2
+
+models:
+  - name: stg_google_ads
+    columns:
+      - name: campaign_id
+        tests:
+          - not_null
+      - name: platform
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['google_ads']
+      - name: campaign_type
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['Search', 'Display', 'Social Media']
+      - name: spend_usd
+        tests:
+          - not_null
+      - name: clicks
+        tests:
+          - not_null
+      - name: impressions
+        tests:
+          - not_null
+      - name: date
+        tests:
+          - not_null
+
+  - name: stg_youtube_ads
+    columns:
+      - name: campaign_id
+        tests:
+          - not_null
+      - name: platform
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['youtube_ads']
+      - name: campaign_type
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['Search', 'Display', 'Social Media']
+      - name: spend_usd
+        tests:
+          - not_null
+      - name: cpv
+        tests:
+          - not_null
+      - name: view_rate
+        tests:
+          - not_null
+      - name: date
+        tests:
+          - not_null
+
+  - name: stg_bing_ads
+    columns:
+      - name: campaign_id
+        tests:
+          - not_null
+      - name: platform
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['bing_ads']
+      - name: match_type
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['broad', 'phrase', 'exact']
+      - name: spend_usd
+        tests:
+          - not_null
+      - name: date
+        tests:
+          - not_null
