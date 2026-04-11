@@ -1,0 +1,51 @@
+version: 2
+
+models:
+  - name: mart_platform_summary
+    columns:
+      - name: platform
+        tests:
+          - not_null
+          - unique
+          - accepted_values:
+              arguments:
+                values: ['google_ads', 'youtube_ads', 'bing_ads']
+      - name: total_spend_usd
+        tests:
+          - not_null
+      - name: cpa
+        tests:
+          - not_null
+      - name: avg_roas
+        tests:
+          - not_null
+
+  - name: mart_campaign_daily
+    columns:
+      - name: date
+        tests:
+          - not_null
+      - name: platform
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['google_ads', 'youtube_ads', 'bing_ads']
+      - name: total_spend_usd
+        tests:
+          - not_null
+
+  - name: mart_ad_performance
+    columns:
+      - name: platform
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['google_ads', 'youtube_ads', 'bing_ads']
+      - name: company
+        tests:
+          - not_null
+      - name: cpa
+        tests:
+          - not_null
