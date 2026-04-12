@@ -274,5 +274,6 @@ https://lookerstudio.google.com/s/tZfyDx8OCvY
 
 ## Author
 
-**Mohsen Eshghi** — Data and Product Analyst 
+**Mohsen Eshghi** — Data and Product Analyst
+
 Stack: Snowflake · dbt Cloud · Python · SQL
