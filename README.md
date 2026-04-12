@@ -4,6 +4,7 @@ A production-grade data pipeline for a fictional digital advertising agency mana
 
 
 
+
 ## Business Scenario
 
 AdFlow Media is a digital advertising agency running campaigns for 5 clients across 3 platforms simultaneously. The pipeline answers one core business question:
