@@ -76,6 +76,7 @@ Data Sources (CSV + Python simulation)
 | **Looker Studio** | BI dashboard connected to Gold layer |
 | **GitHub** | Version control for all dbt models |
 
+
 ---
 
 ## Data Sources
@@ -241,6 +242,7 @@ The Looker Studio dashboard connects directly to `ADFLOW_GOLD` and includes:
 - **Daily spend trend** (line chart) — full 2021 campaign timeline by platform
 - **CTR by company and segment** (table) — creative performance breakdown
 
+https://lookerstudio.google.com/s/tZfyDx8OCvY
 
 ---
 
