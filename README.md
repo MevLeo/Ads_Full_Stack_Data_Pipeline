@@ -1,6 +1,6 @@
 # AdFlow Media — Full-Stack Data Pipeline
 
-A production-grade data pipeline for a fictional digital advertising agency managing paid campaigns across **Google Ads**, **YouTube Ads**, and **Bing Ads**. Built on a modern data stack using Snowflake and dbt Cloud with a medallion architecture.
+A production-grade data pipeline for a digital advertising agency managing paid campaigns across **Google Ads**, **YouTube Ads**, and **Bing Ads**. Built on a modern data stack using Snowflake and dbt Cloud with a medallion architecture.
 
 
 
